@@ -49,13 +49,10 @@ export default function DashboardHome() {
   }, []);
 
   return (
-    <div className="relative w-full min-h-screen bg-[#050a18] text-white p-6 md:p-10 overflow-hidden">
-      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-sky-500/10 blur-[150px] rounded-full -translate-y-1/3 translate-x-1/3" />
-      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-blue-600/5 blur-[120px] rounded-full" />
-
-      <div className="relative z-10 max-w-7xl mx-auto space-y-8">
+    <div className="relative w-full min-h-screen bg-transparent font-sans text-[#172b48] p-1 md:p-2 overflow-hidden dark:text-[#eef6ff]">
+      <div className="relative z-10 mx-auto max-w-7xl space-y-5">
         {/* الهيدر الرئيسي */}
-        <header className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 border-b border-white/5 pb-6">
+        <header className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 rounded-[22px] bg-white px-6 py-5 shadow-[0_8px_24px_rgba(20,52,91,0.06)] dark:bg-[#102641]">
           <div>
             <div className="flex items-center gap-2 mb-2">
               <span className="flex h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
@@ -64,7 +61,7 @@ export default function DashboardHome() {
               SmartGate{" "}
               <span className="text-sky-400">Statistical Dashboard</span>
             </h1>
-            <p className="text-slate-400 text-2xl mt-1">
+            <p className="text-[#7890b2] dark:text-[#91a9ca] text-2xl mt-1">
               Real-time behavior tracking, safety indices, and facility load
               management.
             </p>
@@ -74,7 +71,7 @@ export default function DashboardHome() {
             <Clock className="h-5 w-5 text-sky-400 animate-spin-slow" />
             <div className="text-right">
               <div className="text-2xl font-mono font-bold">LIVE TELEMETRY</div>
-              <div className="text-[10px] text-slate-400 uppercase tracking-wider">
+              <div className="text-[10px] text-[#7890b2] dark:text-[#91a9ca] uppercase tracking-wider">
                 SYSTEM SYNCHRONIZED
               </div>
             </div>
@@ -82,8 +79,8 @@ export default function DashboardHome() {
         </header>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-5 backdrop-blur-md">
-            <div className="flex justify-between items-start text-slate-400 mb-3">
+          <div className="rounded-[22px] border border-transparent bg-white p-5 shadow-[0_8px_24px_rgba(20,52,91,0.06)] dark:border-white/5 dark:bg-[#102641]">
+            <div className="flex justify-between items-start text-[#7890b2] dark:text-[#91a9ca] mb-3">
               <Users className="h-5 w-5 text-sky-400" />
               <span className="text-xs font-medium text-emerald-400 flex items-center gap-1 bg-emerald-500/10 px-2 py-0.5 rounded-full">
                 <TrendingUp className="h-3 w-3" /> +12%
@@ -92,28 +89,28 @@ export default function DashboardHome() {
             <div className="text-2xl font-bold tracking-tight font-mono">
               {entrances}
             </div>
-            <p className="text-xs text-slate-400 font-medium mt-1 uppercase tracking-wider">
+            <p className="text-xs text-[#7890b2] dark:text-[#91a9ca] font-medium mt-1 uppercase tracking-wider">
               Total Daily Accesses
             </p>
           </div>
 
-          <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-5 backdrop-blur-md">
-            <div className="flex justify-between items-start text-slate-400 mb-3">
+          <div className="rounded-[22px] border border-transparent bg-white p-5 shadow-[0_8px_24px_rgba(20,52,91,0.06)] dark:border-white/5 dark:bg-[#102641]">
+            <div className="flex justify-between items-start text-[#7890b2] dark:text-[#91a9ca] mb-3">
               <Activity className="h-5 w-5 text-orange-400" />
-              <span className="text-[10px] text-slate-400 bg-white/5 px-2 py-0.5 rounded-full">
+              <span className="text-[10px] text-[#7890b2] dark:text-[#91a9ca] bg-white/5 px-2 py-0.5 rounded-full">
                 Cars / Hr
               </span>
             </div>
             <div className="text-2xl font-bold tracking-tight font-mono">
               {peakHourTraffic}
             </div>
-            <p className="text-xs text-slate-400 font-medium mt-1 uppercase tracking-wider">
+            <p className="text-xs text-[#7890b2] dark:text-[#91a9ca] font-medium mt-1 uppercase tracking-wider">
               Peak Traffic Load
             </p>
           </div>
 
-          <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-5 backdrop-blur-md">
-            <div className="flex justify-between items-start text-slate-400 mb-3">
+          <div className="rounded-[22px] border border-transparent bg-white p-5 shadow-[0_8px_24px_rgba(20,52,91,0.06)] dark:border-white/5 dark:bg-[#102641]">
+            <div className="flex justify-between items-start text-[#7890b2] dark:text-[#91a9ca] mb-3">
               <ShieldCheck className="h-5 w-5 text-emerald-400" />
               <span className="text-[10px] font-bold text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded-full">
                 OPTIMAL
@@ -122,20 +119,20 @@ export default function DashboardHome() {
             <div className="text-2xl font-bold tracking-tight font-mono">
               99.4%
             </div>
-            <p className="text-xs text-slate-400 font-medium mt-1 uppercase tracking-wider">
+            <p className="text-xs text-[#7890b2] dark:text-[#91a9ca] font-medium mt-1 uppercase tracking-wider">
               AI Recognition Accuracy
             </p>
           </div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-          <div className="lg:col-span-2 rounded-2xl border border-white/10 bg-white/[0.03] p-6 backdrop-blur-md">
+          <div className="lg:col-span-2 rounded-[22px] border border-transparent bg-white p-6 shadow-[0_8px_24px_rgba(20,52,91,0.06)] dark:border-white/5 dark:bg-[#102641]">
             <div className="flex justify-between items-center mb-6">
               <div>
                 <h3 className="font-bold text-2xl">
                   Traffic Distribution Velocity
                 </h3>
-                <p className="text-xs text-slate-400 mt-0.5">
+                <p className="text-xs text-[#7890b2] dark:text-[#91a9ca] mt-0.5">
                   Analysis of patterns between general vehicle entries and
                   residents.
                 </p>
@@ -223,7 +220,7 @@ export default function DashboardHome() {
                 </span>
               </div>
               <h3 className="text-2xl font-bold">Live AI Gateway Stream</h3>
-              <p className="text-slate-400 text-xs mt-2 leading-relaxed">
+              <p className="text-[#7890b2] dark:text-[#91a9ca] text-xs mt-2 leading-relaxed">
                 Our vision node processes license plates and human verification
                 layers in less than <b>180ms</b>. Everything is archived
                 securely inside the system.

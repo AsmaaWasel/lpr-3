@@ -179,6 +179,7 @@ export default function Sidebar() {
         items-center
 
         rounded-[28px]
+        font-sans
 
         bg-white
         py-5
@@ -188,7 +189,7 @@ export default function Sidebar() {
         dark:bg-[#102641]
         dark:shadow-none
 
-        lg:flex
+            md:flex
       "
     >
       {/* =====================================================

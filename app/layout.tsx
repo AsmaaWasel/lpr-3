@@ -15,11 +15,12 @@ export default function RootLayout({
       <body
         className="
           min-h-screen
-          bg-slate-100
-          text-slate-900
+          bg-[#e8eef7]
+          font-sans
+          text-[#172b48]
           antialiased
-          dark:bg-slate-950
-          dark:text-white
+          dark:bg-[#071528]
+          dark:text-[#eef6ff]
         "
       >
         <ThemeProvider

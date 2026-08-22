@@ -15,8 +15,9 @@ export default function GatesTable({ gates, selectedGate, onSelect }: Props) {
         overflow-hidden
         rounded-[24px]
         bg-white
-        shadow-sm
-        dark:bg-slate-900
+        shadow-[0_8px_24px_rgba(20,52,91,0.06)]
+        dark:bg-[#102641]
+        dark:shadow-none
       "
     >
       {/* Header */}

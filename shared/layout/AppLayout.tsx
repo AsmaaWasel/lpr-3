@@ -27,6 +27,9 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
         className="
           min-h-screen
 
+          md:pl-[152px]
+          md:pr-5
+          md:py-4
           lg:pl-[176px]
           lg:pr-8
           lg:py-5

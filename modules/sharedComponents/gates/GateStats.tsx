@@ -16,7 +16,7 @@ function StatCard({ title, value, dark = false }: StatCardProps) {
 
         ${
           dark
-            ? "bg-gradient-to-br from-[#173653] to-[#0e263e] text-white"
+            ? "bg-[#173653] text-white shadow-[0_8px_22px_rgba(20,52,91,0.14)]"
             : "bg-white text-slate-900 shadow-sm dark:bg-slate-900 dark:text-white"
         }
       `}
