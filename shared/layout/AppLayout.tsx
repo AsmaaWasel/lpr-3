@@ -8,9 +8,9 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
     <div
       className="
         min-h-screen
-        bg-slate-100
+        bg-[#e8eef7]
 
-        dark:bg-slate-950
+        dark:bg-[#071528]
       "
     >
       {/* =====================================================
@@ -27,9 +27,9 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
         className="
           min-h-screen
 
-          lg:pl-[144px]
-          lg:pr-4
-          lg:py-4
+          lg:pl-[176px]
+          lg:pr-8
+          lg:py-5
         "
       >
         {/* ===================================================
@@ -44,9 +44,9 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
 
         <main
           className="
-            mt-5
+            mt-4
             min-w-0
-            pb-6
+            pb-8
             px-1
             lg:px-0
           "

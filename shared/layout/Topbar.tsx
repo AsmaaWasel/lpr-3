@@ -148,9 +148,10 @@ export default function Header() {
         bg-white
         px-5
         py-4
-        shadow-sm
+        shadow-[0_10px_30px_rgba(20,52,91,0.06)]
 
-        dark:bg-slate-900
+        dark:bg-[#102641]
+        dark:shadow-none
 
         md:px-7
       "

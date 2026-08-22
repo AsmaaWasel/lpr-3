@@ -167,13 +167,13 @@ export default function Sidebar() {
     <aside
       className="
         fixed
-        left-4
-        top-4
-        bottom-4
+        left-5
+        top-5
+        bottom-5
         z-50
 
         hidden
-        w-[112px]
+        w-[130px]
 
         flex-col
         items-center
@@ -183,9 +183,10 @@ export default function Sidebar() {
         bg-white
         py-5
 
-        shadow-sm
+        shadow-[0_12px_35px_rgba(20,52,91,0.08)]
 
-        dark:bg-slate-900
+        dark:bg-[#102641]
+        dark:shadow-none
 
         lg:flex
       "
@@ -290,7 +291,7 @@ export default function Sidebar() {
                 ${
                   active
                     ? `
-                      bg-cyan-100
+                      bg-[#d9f2fc]
                       text-cyan-500
 
                       dark:bg-cyan-500/15
